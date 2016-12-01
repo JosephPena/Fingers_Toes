@@ -1,9 +1,11 @@
 $(document).ready(function(){
 var userVal = 0;
 var counter = 0;
+var intervalFunc;
 
 $(".submitBTN").on("click", function(){
   userVal = parseInt($(".userInput").val());
+  clearInterval(intervalFunc);
   counterFunc(userVal);
 });
 
@@ -23,9 +25,8 @@ $(".resetBTN").on("click", function(){
 });
 
 //Counter Function.  Handles 2 operations   :counting up   :looks to match user value;
-var counterFunc = function(userNum) {
-
-  var intervalFunc = setInterval(function () {
+function counterFunc(userNum) {
+  intervalFunc = setInterval(function () {
     if(counter < userNum){
     counter++
     document.getElementById("counterBox").innerHTML = counter;
@@ -48,7 +49,6 @@ var counterFunc = function(userNum) {
       }else if(counter%5 === 0){
         console.log("TOES!")
       };
-
       clearInterval(intervalFunc);                //required to stop the 1000 interval
     }
 
