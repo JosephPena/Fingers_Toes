@@ -14,6 +14,7 @@ $(".submitBTN").on("click", function(){
 $(".restartBTN").on("click", function(){
   counter = 0;
   document.getElementById("counterBox").innerHTML = counter;
+  clearInterval(counterInterval);
   counterFunc(userVal);
 });
 
@@ -23,6 +24,7 @@ $(".resetBTN").on("click", function(){
   userVal = 0;
   counter = 0;
   document.getElementById("counterBox").innerHTML = counter;
+  clearInterval(counterInterval);
 });
 
 //Counter Function --> Takes user val as param.  Increments a counter and looks for cases where divisible by 3, 5, and both values
