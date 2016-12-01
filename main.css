@@ -1,9 +1,94 @@
 header {
   position: relative;
   text-align: center;
+  background: #da88ea;
+  height: 100px;
+  text-align: center;
+}
+
+header h1 {
+  left: 0;
+  line-height: 200px;
+  margin: auto;
+  margin-top: -100px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  font-size: 40px;
+  font-family: Monospace;
+}
+
+.submitBTN {
+  background-color:#44c767;
+  -moz-border-radius:28px;
+  -webkit-border-radius:28px;
+  border-radius:28px;
+  border:1px solid #18ab29;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  padding:16px 31px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #2f6627;
+}
+.submitBTN:hover {
+  background-color:#5cbf2a;
+}
+.submitBTN:active {
+  position:relative;
+  top:1px;
+}
+
+.restartBTN {
+  background-color:#3d94f6;
+  -moz-border-radius:28px;
+  -webkit-border-radius:28px;
+  border-radius:28px;
+  border:1px solid #337fed;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  padding:16px 31px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #1570cd;
+}
+.restartBTN:hover {
+  background-color:#1e62d0;
+}
+.restartBTN:active {
+  position:relative;
+  top:1px;
+}
+
+.resetBTN {
+  background-color:#fe1a00;
+  -moz-border-radius:28px;
+  -webkit-border-radius:28px;
+  border-radius:28px;
+  border:1px solid #d83526;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  padding:16px 31px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #b23e35;
+}
+.resetBTN:hover {
+  background-color:#ce0100;
+}
+.resetBTN:active {
+  position:relative;
+  top:1px;
 }
 
 table {
+  position: relative;
   margin: 0 auto;
   border-collapse: separate;
   border-spacing: 200px 50px;
@@ -29,4 +114,5 @@ table {
   border: 6px solid blue;
   transform: scale(1.2);
 }
+
 
