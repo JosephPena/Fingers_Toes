@@ -1,61 +1,41 @@
 $(document).ready(function(){
-var origVal = 0
+var userVal = 0;
+var counter = 0;
 
 $(".submitBTN").on("click", function(){
-  origVal = parseInt($(".userInput").val());
-  counterFunc();
+  userVal = parseInt($(".userInput").val());
+  counterFunc(userVal);
 });
-
-
 
 //Restart --> restart the counter
-//Glitch: Pressing Restart continues the counter from the orig val
 $(".restartBTN").on("click", function(){
-  // console.log(counter + " the restart button BEFORE");
-  // counter = -1;
-  // console.log(counter + " the restart button AFTER");
+  console.log(counter + " the restart button BEFORE");
+  counter = 0;
+  document.getElementById("counterBox").innerHTML = 0;
+  console.log(counter + " the restart button AFTER");
 });
-
-
 
 //Reset --> reset counter & clear inputs
 $(".resetBTN").on("click", function(){
-  origVal = 0;
   $("#userForm")[0].reset();
+  userVal = 0;
+  counter = 0;
+  document.getElementById("counterBox").innerHTML = 0;
 });
 
-
-
-
 //Counter Function.  Handles 2 operations   :counting up   :looks to match user value;
-var counterFunc = function() {
+var counterFunc = function(userNum) {
 
-var counter = 0;
+  var intervalFunc = setInterval(function () {
+    if(counter === userNum){
+      document.getElementById("counterBox").innerHTML = userNum;
+      clearInterval(intervalFunc);                //required to stop the 1000 interval
 
-var intervalFunc = setInterval(function () {
-    if(counter >= origVal){
-      clearInterval(intervalFunc);
-      return;
-
-    }else if(counter < origVal){
+    }else if(counter < userNum){
       counter++
+      console.log(counter + " active counter")
     }
   }, 1000);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 });
