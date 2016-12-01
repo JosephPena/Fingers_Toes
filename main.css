@@ -1,6 +1,7 @@
 body{
   margin:0;
 }
+
 header {
   background: #da88ea;
   margin-top: -45px;
@@ -11,29 +12,40 @@ header {
   font-family: Monospace;
   text-align: center;
 }
+
 .userInteract {
   text-align: center;
 }
 
 .userInput {
-background: #333;
-color: #ccc;
-width: 150px;
-padding: 6px 15px 6px 35px;
-transition: 500ms all ease;
-border: 1px solid #333;
-margin-bottom: 30px;
+  background: #333;
+  color: #ccc;
+  width: 120px;
+  padding: 6px 15px 6px 35px;
+  transition: 500ms all ease;
+  border: 1px solid #333;
+  margin-bottom: 30px;
 }
 
 .userInput:hover{
-box-shadow: 12px 13px 0px rgba(204, 211, 51, 0.38),
--11px -14px 0px rgba(241, 96, 0, 0.28),
-18px -24px 0px rgba(0, 0, 0, 0.34),
-33px -6px 0px rgba(39, 74, 214, 0.28);
+  box-shadow: 12px 13px 0px rgba(204, 211, 51, 0.38),
+  -11px -14px 0px rgba(241, 96, 0, 0.28),
+  18px -24px 0px rgba(0, 0, 0, 0.34),
+  33px -6px 0px rgba(39, 74, 214, 0.28);
+}
+
+.counterText {
+  display:inline-block;
+  margin-left: 5%;
+  margin-right: 2%;
+}
+
+#counterBox{
+  display:inline-block;
 }
 
 button {
-  margin: 30px;
+  margin: 40px;
 }
 
 .submitBTN {
@@ -51,9 +63,11 @@ button {
   text-decoration:none;
   text-shadow:0px 1px 0px #2f6627;
 }
+
 .submitBTN:hover {
   background-color:#5cbf2a;
 }
+
 .submitBTN:active {
   position:relative;
   top:1px;
@@ -74,9 +88,11 @@ button {
   text-decoration:none;
   text-shadow:0px 1px 0px #1570cd;
 }
+
 .restartBTN:hover {
   background-color:#1e62d0;
 }
+
 .restartBTN:active {
   position:relative;
   top:1px;
@@ -97,9 +113,11 @@ button {
   text-decoration:none;
   text-shadow:0px 1px 0px #b23e35;
 }
+
 .resetBTN:hover {
   background-color:#ce0100;
 }
+
 .resetBTN:active {
   position:relative;
   top:1px;
@@ -132,5 +150,3 @@ table {
   border: 6px solid blue;
   transform: scale(1.2);
 }
-
-
