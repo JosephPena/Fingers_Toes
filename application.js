@@ -9,10 +9,9 @@ $(".submitBTN").on("click", function(){
 
 //Restart --> restart the counter
 $(".restartBTN").on("click", function(){
-  console.log(counter + " the restart button BEFORE");
   counter = 0;
   document.getElementById("counterBox").innerHTML = 0;
-  console.log(counter + " the restart button AFTER");
+  counterFunc(userVal);
 });
 
 //Reset --> reset counter & clear inputs
