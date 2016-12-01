@@ -1,21 +1,39 @@
+body{
+  margin:0;
+}
 header {
-  position: relative;
-  text-align: center;
   background: #da88ea;
-  height: 100px;
+  margin-top: -45px;
+  position: relative;
+  top: 80%;
+  max-width: 100%;
+  font-size: 28px;
+  font-family: Monospace;
+  text-align: center;
+}
+.userInteract {
   text-align: center;
 }
 
-header h1 {
-  left: 0;
-  line-height: 200px;
-  margin: auto;
-  margin-top: -100px;
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  font-size: 40px;
-  font-family: Monospace;
+.userInput {
+background: #333;
+color: #ccc;
+width: 150px;
+padding: 6px 15px 6px 35px;
+transition: 500ms all ease;
+border: 1px solid #333;
+margin-bottom: 30px;
+}
+
+.userInput:hover{
+box-shadow: 12px 13px 0px rgba(204, 211, 51, 0.38),
+-11px -14px 0px rgba(241, 96, 0, 0.28),
+18px -24px 0px rgba(0, 0, 0, 0.34),
+33px -6px 0px rgba(39, 74, 214, 0.28);
+}
+
+button {
+  margin: 30px;
 }
 
 .submitBTN {
