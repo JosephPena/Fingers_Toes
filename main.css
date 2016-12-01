@@ -132,21 +132,25 @@ table {
 
 .fingers {
   padding: 10%;
-  border: 6px solid #555;
+  border: 6px solid black;
+  border-radius: 20%;
   text-align: center;
-  width: 100px;
+  width: 120px;
   max-height: 50px;
+  font-family:Arial;
 }
 
 .toes {
   padding: 10%;
-  border: 6px solid #555;
+  border: 6px solid black;
+  border-radius: 20%;
   text-align: center;
-  width: 100px;
+  width: 120px;
   max-height: 50px;
+  font-family:Arial;
 }
 
 .highlight {
   border: 6px solid blue;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
