@@ -1,0 +1,19 @@
+{
+  "name": "fingers_toes",
+  "version": "1.0.0",
+  "description": "highlighting fingers and toes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosephPena/Fingers_Toes.git"
+  },
+  "author": "Joseph Pena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JosephPena/Fingers_Toes/issues"
+  },
+  "homepage": "https://github.com/JosephPena/Fingers_Toes#readme"
+}
