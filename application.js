@@ -1,35 +1,44 @@
 $(document).ready(function(){
-var origVal = 0;
+var origVal = 0
 
 $(".submitBTN").on("click", function(){
   origVal = parseInt($(".userInput").val());
   counterFunc();
-  console.log(origVal)
 });
 
 
 
 //Restart --> restart the counter
-
-
-
-//Reset --> reset counter & clear input
-$(".resetBTN").on("click", function(){
-  document.getElementById("userForm").reset();
-  origVal = 0;
-  console.log(origVal);
+//Glitch: Pressing Restart continues the counter from the orig val
+$(".restartBTN").on("click", function(){
+  // console.log(counter + " the restart button BEFORE");
+  // counter = -1;
+  // console.log(counter + " the restart button AFTER");
 });
 
+
+
+//Reset --> reset counter & clear inputs
+$(".resetBTN").on("click", function(){
+  origVal = 0;
+  $("#userForm")[0].reset();
+});
+
+
+
+
 //Counter Function.  Handles 2 operations   :counting up   :looks to match user value;
-function counterFunc() {
-  var counter = 0;
-      console.log(counter + " this is the counterFunc activated!");
-  setInterval(function () {
-    if(counter === origVal){
-      clearInterval(counter);
-    }else{
-      ++counter;
-      console.log(counter + " this is the counter");
+var counterFunc = function() {
+
+var counter = 0;
+
+var intervalFunc = setInterval(function () {
+    if(counter >= origVal){
+      clearInterval(intervalFunc);
+      return;
+
+    }else if(counter < origVal){
+      counter++
     }
   }, 1000);
 }
